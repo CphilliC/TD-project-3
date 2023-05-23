@@ -3,11 +3,13 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap" rel="stylesheet">
+
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/normalize.css">
 	<title>Courtney's online registration</title>
 </head>
 
@@ -22,17 +24,18 @@
 		<p>Get the latest news on how your code is doing right in you inbox</p>
 	</div>
 
+	<div class="border"></div>
 	
-		<h2>Contact Information</h2>
+		<h2 class="head2">Contact Information</h2>
 
 		<div class="section-1">
 			<form action="index.html" method="post">
 
 				<label for="name">Full Name</label><br>
-				<input type="text" id="name" name="user_name">
+				<input placeholder="Required" type="text" id="name" name="user_name">
 
 				<label for="email">Email Address</label><br>
-				<input type="text" id="email" name="user_email">
+				<input placeholder="Required" type="text" id="email" name="user_email">
 
 				<label for="number">Phone Number</label><br>
 				<input type="text" id="number" name="user_number">
@@ -44,9 +47,11 @@
 				<input type="text" id="city" name="user_city">
 
 
-				<label for="state">State</label><br>
-				<select id="state" name="user_state">
-					<option value="none" id="no-value">Choose State</option>
+				<div class="select-container">
+
+				<select id="state" name="user_state" value="" required>
+					<option value="" class="choose">Choose State</option>
+					
 					<option value="AL">Alabama</option>
 					<option value="AK">Alaska</option>
 					<option value="AZ">Arizona</option>
@@ -99,7 +104,10 @@
 					<option value="WI">Wisconsin</option>
 					<option value="WY">Wyoming</option>
 				</select>
-
+			</div>
+<!-- Zip code input is roughly 
+a quarter of the width of other 
+inputs on Desktop sized screens.  -->
 
 				<label for="zip">Zip Code</label>
 				<input type="text" id="zip" name="user_zip">
@@ -115,7 +123,7 @@
 				<label for="css">CSS News</label><br>
 				<input type="checkbox" id="css" name="choice_2" value="html-news">
 
-				<label for="favascript">Html News</label><br>
+				<label for="javascript">Javascript News</label><br>
 				<input type="checkbox" id="javascript" name="choice_3" value="html-news">
 			</fieldset>
 
@@ -123,10 +131,10 @@
 				<legend class="news-format">Newsletter format</legend>
 
 				<label for="format-html">HTML</label>
-				<input type="radio" id="format-html" name="format_1" value="HTML">
+				<input type="radio" id="format-html" name="format" value="HTML">
 
 				<label for="format-plain">Plain text</label>
-				<input type="radio" id="format-plain" name="format_2" value="Plan text">
+				<input type="radio" id="format-plain" name="format" value="Plan text">
 
 			</fieldset>
 
