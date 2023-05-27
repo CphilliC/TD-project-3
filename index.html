@@ -18,40 +18,44 @@
 		<h1>The Code Review</h1>
 	</header>
 
-	<div class="container">
-	<div class="sign-up">
-		<h2>Signup for our newsletter</h2>
-		<p>Get the latest news on how your code is doing right in you inbox</p>
-	</div>
-
-	<div class="border"></div>
 	
-		<h2 class="head2">Contact Information</h2>
+		<div class="sign-up">
+			<h2>Signup for our newsletter</h2>
+			<p>Get the latest news on how your code is doing right in you inbox</p>
+		</div>
 
-		<div class="section-1">
-			<form action="index.html" method="post">
+		<div class="border"></div>
+		<div class="contact-container">
+		<form action="index.html" method="post">
+			<fieldset class="section-1">
+				<legend class="contact-header">Contact Information</legend>
 
+				<div>
 				<label for="name">Full Name</label><br>
 				<input placeholder="Required" type="text" id="name" name="user_name">
-
+				</div>
+				<div>
 				<label for="email">Email Address</label><br>
-				<input placeholder="Required" type="text" id="email" name="user_email">
-
+				<input placeholder="Required" type="email" id="email" name="user_email">
+			`</div>
+				<div>
 				<label for="number">Phone Number</label><br>
-				<input type="text" id="number" name="user_number">
-
+				<input type="tel" id="number" name="user_number">
+			</div>
+				<div>
 				<label for="address">Street Address</label><br>
 				<input type="text" id="address" name="user_address">
-
+			</div>
+			<div>
 				<label for="city">City</label><br>
 				<input type="text" id="city" name="user_city">
-
-
-				<div class="select-container">
-
-				<select id="state" name="user_state" value="" required>
-					<option value="" class="choose">Choose State</option>
-					
+			</div>
+				
+			<div>
+				<label class="user-state" for="state">State</label>
+				<select id="state" name="user_state" class="select-box" required>
+					<!-- to style the disabled text use the select attribute in css  -->
+					<option disabled selected  value="disabled" class="text">Choose State</option>
 					<option value="AL">Alabama</option>
 					<option value="AK">Alaska</option>
 					<option value="AZ">Arizona</option>
@@ -105,55 +109,65 @@
 					<option value="WY">Wyoming</option>
 				</select>
 			</div>
-<!-- Zip code input is roughly 
-a quarter of the width of other 
-inputs on Desktop sized screens.  -->
-
+			<div>
 				<label for="zip">Zip Code</label>
-				<input type="text" id="zip" name="user_zip">
-		</div>
-
-		<div class="section-2">
-			<h2>Newsletter</h2>
-			<fieldset>
-				<legend class="news-type">Select the newsletters you would like to recieve</legend>
-				<label for="html">Html News</label><br>
-				<input type="checkbox" id="html" name="choice_1" value="html-news">
-				
-				<label for="css">CSS News</label><br>
-				<input type="checkbox" id="css" name="choice_2" value="html-news">
-
-				<label for="javascript">Javascript News</label><br>
-				<input type="checkbox" id="javascript" name="choice_3" value="html-news">
+				<input type="number" id="zip" name="user_zip">
+			</div>
 			</fieldset>
 
-			<fieldset>
-				<legend class="news-format">Newsletter format</legend>
+			
+	</div>
 
-				<label for="format-html">HTML</label>
-				<input type="radio" id="format-html" name="format" value="HTML">
+	<div class="border-2"></div>
 
-				<label for="format-plain">Plain text</label>
-				<input type="radio" id="format-plain" name="format" value="Plan text">
 
-			</fieldset>
+	<fieldset class="section-2">
+		<legend class="newsletter">Newsletter</legend>
 
-	
-			<label for="topics">Other topics you'd like to hear about</label>
-			<textarea name="topics" id="topics"></textarea>
+		<div class="checkbox-wrap">
+		<p>Select the newsletters you would like to recieve</p>
+		<div class="check-items">
+		<input type="checkbox" id="html" name="user_choice" value="news_html">
+		<label class="news" for="html">HTMLNews</label><br>
 
-			<button class="button" type="button">Sign Up</button>
+		<input type="checkbox" id="css" name="user_choice" value="news_css">
+		<label class="news" for="css">CSSNews</label><br>
+
+		<input type="checkbox" id="java" name="user_choice" value="news_java">
+		<label class="news" for="java">Javascript News</label>
+	</div>
 		</div>
-		</form>
+
+		<div class="radio-wrap">
+		<p class="news-format">Newsletter Format</p>
+		<div class="radio-items">
+		<input type="radio" id="html" name="user_format" value="format_html">
+		<label class="format" for="html">HTML</label><br>
+
+		<input type="radio" id="plain" name="user_format" value="format_plain">
+		<label class="format" for="plain">Plaintext</label><br>
+	</div>
+		</div>
 	
 
-		<footer class="footer">
+		<div class="textarea">
+		<label for="topics">Other topics you'd like to hear about</label>
+		<textarea name="topics" id="topics"></textarea>
+	</div>
+
+		<button class="button" type="button">Sign Up</button>
+	</fieldset>
+
+	</form>
+
+	<div class="footer">
+		<footer>
 			<p>Copyright The Code Review</p>
 		</footer>
+
 	</div>
-	
+
+
 </body>
 
 </html>
-
-

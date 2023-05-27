@@ -1,104 +1,272 @@
 * {
-    font-family: 'Merriweather', sans-serif;
-    margin: 0;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Merriweather', Georgia, serif;
 }
 
 body {
-    background: #fafafa;
+    background: #fcfcfc;
+    color:rgb(59, 58, 58);
 }
-
 header {
-    background-color: rgb(44, 58, 71);
-    padding: 15px;
+    /* background-color: rgb(44, 58, 71); */
+    background: rgb(165,186,206);
+    background: linear-gradient(90deg, rgba(165,186,206,1) 0%, rgba(25,42,56,0.4023984593837535) 53%);
+    padding: 14px;
+    color: white;
+    text-transform: uppercase;
     text-align: center;
 }
 
-
-h1 {
-    color: #fff;
-    text-transform: uppercase;
-}
 
 h2 {
-    color: rgb(46, 48, 49);
-    font-weight: 700;
-    font-size: 1.12em;
-    font-weight: 800;
+    font-size: 1.16em;
+    margin-bottom: 14px;
+    font-weight: 900;
 }
 
-.container {
-    padding: 5%;
-}
-
-.sign-up {
-    text-align: center;
-    margin-bottom: 35px;
-}
-
-.border {
-    border-top: 3px solid black;
-    border-bottom: 1px solid black;
-    height: 4px;
-}
-
-.sign-up h2 {
-    margin-top: 10px;
-}
-
-.head2 {
-    margin: 25px 0;
-}
-
-.sign-up p {
-    padding-top: 12px;
+p,
+label {
     font-weight: 300;
-    color: rgb(145 145 145);
-    font-size: 0.9em;
-}
-
-.container label {
-    color: rgb(96, 96, 96);
-    font-weight: 200;
     font-size: 14px;
 }
 
-.container input,
-select {
-    width: 100%;
-    border-radius: .5em;
+.sign-up p  {
+    color: rgb(167, 172, 175);
+    padding: 0 5%;
+} 
+
+div[class="sign-up"] {
+    text-align: center;
+    margin-top: 28px;
+    margin-bottom: 35px;
+}
+
+div[class="border"] {
+    border-top: 4px solid rgb(57, 57, 57);
+    border-bottom: 2px solid rgb(57, 57, 57);
+    margin: 0 4%;
+    padding: 2px 0;
+}
+
+div[class="border-2"] {
+    border: 1px solid rgb(57, 57, 57);
+    margin: 0 4% 25px;
+}
+
+.contact-container {
+    background-color: rgb(178, 195, 211);
+    background: linear-gradient(90deg, rgba(165,186,206,1) 0%, rgba(69,100,122,0.6993172268907564) 35%);
+    /* margin-top: 25px;
+    margin-bottom: 5px;
+    padding: 0 3px; */
+    margin-0: 5px;
+    margin: 0 6%;
+}
+
+legend {
+    font-size: 1.17em;
+    font-weight: 900;
+}
+
+input:focus {
+    color: violet;
+    border: lime;
+}
+
+
+fieldset {
     border: none;
+}
+
+
+div [class="contact-header"] {
+    margin-bottom: 18px;
+}
+
+
+
+.contact-container input, 
+select {
+    border-radius: .5em;
     background: rgb(239, 237, 237);
-    margin: 18px 0;
-    padding: 15px 0;
-}
-
-
-.section-1 {
-    border-bottom: 2px solid;
-}
-
-
-.section-1 input {
-    margin: 16px 0;
-}
-
-#zip {
-    width: 50%;
+    /* padding: 16px 0; 
+    margin: 15px 0;
+    width: 100%; */
+    border: none;
     display: block;
 }
 
 input::placeholder {
-    font-size: 12px;
-    font-weight: 300;
-    font-style: italic;
     text-align: right;
-    padding-right: 20px;
+    padding-right: 15px;
+    font-size: 12px;
+    font-style: italic;
 }
 
+
+
 select {
-    color: rgb(172, 172, 172);
-    padding-left: 15px;
+    color: rgb(148, 148, 148);
     
 }
+
+.select-box {
+    font-size: 14px;
+    padding-left: 10px;
+    margin: 15px 0;
+}
+
+input[id="zip"] {
+    width: 50%;
+}
+
+.section-2 {
+    display: flex;
+    flex-flow: column wrap;
+    
+    padding: 0 5%;
+    gap: 20px;
+}
+
+/* .section-2 legend {
+    margin-bottom: 18px;
+    
+}
+
+.section-2 p {
+    margin-bottom: 15px;
+}
+
+
+textarea {
+    background: rgb(239, 237, 237);
+    border: none;
+    width: 100%; 
+    flex-basis: auto;
+    border-radius: .5em;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
