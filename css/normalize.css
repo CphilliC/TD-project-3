@@ -227,7 +227,9 @@ button:-moz-focusring,
  */
 
 fieldset {
-  padding: 0.35em 0.75em 0.625em;
+  padding: 1.35em 0.75em 0.625em;
+  /* background: teal; */
+  /* margin-top:  0; */
 }
 
 /**
