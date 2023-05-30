@@ -7,15 +7,13 @@
 
 body {
     
-    background-color:#fafafa;
+    background-color:#ebf2f8;
     color:rgb(59, 59, 59);
     
 }
 
 header {
-    background-color: rgb(44, 58, 71); 
-    /* background: rgb(78,96,114);
-background: linear-gradient(0deg, rgba(78,96,114,1) 12%, rgba(57,79,100,1) 34%, rgba(40,65,88,0.9906337535014006) 59%, rgba(40,65,88,1) 90%); */
+    background-color: rgb(44, 58, 71);  
     padding: 14px;
     color: white;
     text-transform: uppercase;
@@ -25,11 +23,11 @@ background: linear-gradient(0deg, rgba(78,96,114,1) 12%, rgba(57,79,100,1) 34%, 
 h2,
 .contact-container legend,
 .section-2 legend {
-    color:black;
+    
     font-size: 1.17em;
     font-weight: 900;
+    padding-top: 10px;
     }
-
 
 h2 {
  margin-bottom: 12px;
@@ -39,10 +37,11 @@ p,
 label {
     font-weight: 300;
     font-size: 14px;
+    color: white;
 }
 
 .sign-up p, footer p  {
-    color: rgb(110 110 110);
+    color: rgb(110 109 109);
     padding: 0 5%;
 } 
 
@@ -56,16 +55,16 @@ div[class="border"] {
     border-top: 4px solid rgb(57, 57, 57);
     border-bottom: 2px solid rgb(57, 57, 57);
     margin: 0 4%;
-    padding: 2px 0;
+    padding: 3px 0;
 }
 
 div[class="border-2"] {
     border: 1px solid rgb(57, 57, 57);
-    margin: 0 4% 25px;
+    margin: 0 4%;
 }
 
 .contact-container {
-    margin: 1.6em auto;
+    margin: 1.6em 5px;
     display: flex;
     flex-direction: column;
 }
@@ -87,6 +86,19 @@ textarea:focus {
 
 fieldset {
     border: none;
+    background: rgb(78,96,114);
+    background: linear-gradient(0deg, rgba(78,96,114,1) 12%, rgba(57,79,100,1) 34%, rgba(40,65,88,0.9906337535014006) 59%, rgba(40,65,88,1) 90%);
+    /* background: rgb(78,96,114);
+    background: linear-gradient(0deg, rgba(78,96,114,1) 12%, rgba(57,79,100,1) 34%, rgba(40,65,88,0.9906337535014006) 59%, rgba(40,65,88,1) 90%); */
+    border-radius: .5em;
+}
+
+fieldset legend
+ {
+    border: 3px solid   rgb(44, 58, 71);
+    padding: 10px;
+    background-color:#87b7b4;
+    border-radius: 0.5em;
 }
 
 
@@ -100,21 +112,27 @@ div [class="contact-header"] {
 select, 
 textarea {
     border-radius: .15em;
-    background: rgb(219 219 219);
+    background: rgb(232, 233, 235);
     border: none;
 }
 
 
-input::placeholder {
+input::placeholder
+ {
     text-align: right;
     padding-right: 15px;
     font-size: 12px;
     font-style: italic;
 }
 
-*:disabled {
-    color:rgb(170, 170, 170);
+select:valid {
+    color:rgb(57, 57, 57);
 }
+
+select:invalid {
+    color:rgb(141, 142, 142);
+}
+
 
 .select-box {
     font-size: 14px;
@@ -142,7 +160,7 @@ input[id="zip"] {
 .section-2 {
     display: flex;
     flex-flow: column wrap;
-    margin: 50px 5px 24px;
+    margin: 1.5em 5px 1em;
 }
 
 .flex-item,
@@ -163,8 +181,15 @@ input[type="radio"]:checked + label {
 textarea[id="topics"]{
     width: 100%;
     margin: 18px 0 22px;
-    padding: 30px 0;
+    padding-left: 10px;
+    padding-top: 10px;
 }
+
+textarea::placeholder {
+    padding-right: 15px;
+        font-size: 12px;
+        font-style: italic;
+    }
 
 button[class="submit"] {
      background: #4a9d97;
@@ -175,6 +200,7 @@ button[class="submit"] {
      font-size: 18px;
      margin-top: 5px;
      font-weight: 900;
+     width: 100%;
 }
 
 
@@ -189,7 +215,7 @@ button[class="submit"] {
 
 
 footer {
-    margin-bottom: 50%;
+    margin-bottom: 30%;
 }
 
 
@@ -198,16 +224,15 @@ footer {
     .page-wrap {
         width: 50%;
         margin: 0 auto;
-    }
-
+    } 
 
     .contact-item {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-    }
-
+    }  
+    
     .contact-container input,
     select {
         width: 70%;
@@ -215,14 +240,36 @@ footer {
     }
 
     input[id="zip"] {
-       flex-basis: 30%;
+       width: 30%;
+    }
+   
+    .contact-item-zip input {
+        margin-right: 40%;
     }
 
     .contact-item-zip {
-        display: flex;
+        display: inline-flex;
         align-items: center;
-        gap: 7em;
+        width: 100%;
+        justify-content: space-between;
     }
+
+    h2 {
+        padding-top: 15px;
+    }
+
+    header {
+        padding: 5px;
+    }
+
+    .section-2 {
+        display: flex;
+        align-content: center;
+        align-items: stretch;
+        margin-top: 2em;
+    }
+
+    
 
     }
 
