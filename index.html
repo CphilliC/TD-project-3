@@ -130,20 +130,19 @@
 
 						<div class="checkbox-wrap">
 							<p>Select the newsletters you would like to recieve</p>
-							<div class="flex-item">
-								<input type="checkbox" id="html-news" name="user_choice"
-									value="news_html">
-								<label class="news" for="html">HTMLNews</label><br>
+							<div class="check-item">
+								<label for="html_news">HTML News</label>
+								<input type="checkbox" id="html_news" name="user_news" value="html_news">
 							</div>
 
-							<div class="flex-item">
-								<input type="checkbox" id="css" name="user_choice" value="news_css">
-								<label class="news" for="css">CSSNews</label><br>
+							<div class="check-item">
+								<label for="html_news">CSS News</label>
+								<input type="checkbox" id="css_news" name="user_news" value="css_news">
 							</div>
 
-							<div class="flex-item">
-								<input type="checkbox" id="java" name="user_choice" value="news_java">
-								<label class="news" for="java">Javascript News</label>
+							<div class="check-item">
+								<label for="java_news">Javascript News</label>
+								<input type="checkbox" id="java_news" name="user_news" value="java_news">
 							</div>
 						</div> <!-- checkbox wrap -->	
 
@@ -151,12 +150,12 @@
 							<p class="news-format">Newsletter Format</p>
 
 							<div class="flex-item">
-								<input type="radio" id="html" name="user_format" value="format_html">
+								<input type="radio" id="html" name="user_format" value="format">
 								<label class="format" for="html">HTML</label><br>
 							</div>
 
 							<div class="flex-item">
-								<input type="radio" id="plain" name="user_format" value="format_plain">
+								<input type="radio" id="plain" name="user_format" value="format">
 								<label class="format" for="plain">Plaintext</label><br>
 							</div>
 						</div> <!-- radio wrap -->	

@@ -88,8 +88,6 @@ fieldset {
     border: none;
     background: rgb(78,96,114);
     background: linear-gradient(0deg, rgba(78,96,114,1) 12%, rgba(57,79,100,1) 34%, rgba(40,65,88,0.9906337535014006) 59%, rgba(40,65,88,1) 90%);
-    /* background: rgb(78,96,114);
-    background: linear-gradient(0deg, rgba(78,96,114,1) 12%, rgba(57,79,100,1) 34%, rgba(40,65,88,0.9906337535014006) 59%, rgba(40,65,88,1) 90%); */
     border-radius: .5em;
 }
 
@@ -140,8 +138,6 @@ select:invalid {
     margin: 15px 0;
 }
 
-
-
 input[id="zip"] {
     width: 50%;
     margin-bottom: 0;
@@ -157,13 +153,8 @@ input[id="zip"] {
 }  
 
 
-.section-2 {
-    display: flex;
-    flex-flow: column wrap;
-    margin: 1.5em 5px 1em;
-}
-
 .flex-item,
+.check-item,
 .section-2 p {
    margin-bottom: 20px;
 }
@@ -172,6 +163,23 @@ input[type="checkbox"]:checked + label,
 input[type="radio"]:checked + label {
     font-weight: 900;
     color: #4a9d97;
+}
+
+.checkbox-wrap {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.check-item {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.check-item label,
+.flex-item label {
+    padding-left: 10px;
 }
 
 .radio-wrap {
@@ -202,7 +210,6 @@ button[class="submit"] {
      font-weight: 900;
      width: 100%;
 }
-
 
 
 .footer p {
