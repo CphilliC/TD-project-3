@@ -80,7 +80,9 @@ select {
 
 
 .contact-item input:focus,
-textarea:focus {
+textarea:focus,
+select:focus,
+#zip:focus {
     background-color: rgb(171, 206, 204);
 }
 
@@ -128,7 +130,7 @@ select:valid {
 }
 
 select:invalid {
-    color:rgb(141, 142, 142);
+    color: rgb(120 116 116);
 }
 
 
@@ -151,6 +153,10 @@ input[id="zip"] {
   {
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
 }  
+
+input:focus, textarea:focus, select:focus {
+    outline: 4px solid #327ec5;
+}
 
 
 .flex-item,
